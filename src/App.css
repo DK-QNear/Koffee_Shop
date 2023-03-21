@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  font-weight: bold;
+  font-family: "Bradley Hand", cursive;
+  overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BMenu {
+  padding: 2rem 2rem;
+  width: auto;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mapLink {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 2rem 2rem;
   color: white;
+  transition:0.7s;
+}
+.mapLink:hover{
+   background-color: #000;
+     color: #fff;
+     opacity: .6;
+     border:1px solid black;
+     border-radius:5px;
 }
 
-.App-link {
-  color: #61dafb;
+.dropLink {
+  display: block;
+  color: white;
+  padding: 2rem;
+  border-top: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.MenuWrapper{
+  display:flex;
+  justify-content:space-between;
+  overflow:hidden;
+}
+.MenuLHS{
+  padding: 8px 0px;
+}
+
+@keyframes zoom {
+  0%{
+    transform:translateY(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform:translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  image{ 
+    background-color: black;
+    opacity: .25;
   }
 }
