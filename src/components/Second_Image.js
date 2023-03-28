@@ -33,7 +33,7 @@ export default function Second_Image() {
     return (
         <div className="animation" data-aos="zoom-in">
             <S_I
-                imge={image}
+               style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', width: '100%', margin: '0'}}
             />
         </div>
     );

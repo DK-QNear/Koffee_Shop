@@ -24,7 +24,7 @@ export default function First_Image() {
   return (
     <div className="App">
       <F_I
-        imge={image}
+        style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', width: '100%', margin: '0'}}
       />
     </div>
   );

@@ -39,6 +39,12 @@
 .MenuLHS{
   padding: 8px 0px;
 }
+.MenuDiv{
+  padding:1rem 1rem;
+}
+.MenuDv{
+  padding:0.13rem 2rem;
+}
 
 @keyframes zoom {
   0%{

@@ -5,6 +5,9 @@ import First_Image from './First_Image.js'
 import Second_Image from './Second_Image'
 import SecondText from './SecondText'
 import Third_Image from './Third_Image'
+import Brunch from './Brunch'
+import CoffeeTea from './CoffeeTea'
+import Footer from './Footer'
 function Section(props) {
   return (
     <Wrap>
@@ -14,6 +17,9 @@ function Section(props) {
        <Second_Image/>
        <SecondText/>
        <Third_Image/>
+       <Brunch/>
+       <CoffeeTea/>
+       <Footer/>
     </Wrap >
   )
 }
