@@ -1,23 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../files/logo.png'
-import { menuItems } from './MenuItems'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { MdClose } from 'react-icons/md'
 import { useState } from 'react'
 function Header() {
   const [open, setOpen] = useState(false);
-  const navItems = menuItems.map(({ name, url, id }) => {
-    return (
-      <Link
-        key={id}
-        to={url}
-        className="mapLink">
-        {name}
-      </Link>
-    )
-  })
   return (
     <Container>
       <Logo src={logo} />
@@ -25,24 +14,19 @@ function Header() {
         <p>WELCOME TO MyKOFFEE Shop</p>
       </Menu>
       <RightMenu>
-        {navItems}
+        {/* <Link to="menu">Menu</Link>
+        <Link to="about">About</Link> */}
       </RightMenu>
       <BurgerMenu className="BMenu" >
         {open ? <MdClose onClick={() => setOpen(!open)} /> : <RxHamburgerMenu onClick={() => setOpen(!open)} />}
       </BurgerMenu>
       <Drop>
         {open ?
-          menuItems.map(({ name, url, id }) => (
-            <div>
-              <Link
-                key={id}
-                to={url}
-                className="dropLink">
-                {name}
-              </Link>
-            </div>
-          ))
-          : ""}
+        <div>
+             {/* <Link to="menu">Menu</Link>
+             <Link to="about">About</Link> */}
+             </div>
+             :""}
       </Drop>
     </Container>
   )

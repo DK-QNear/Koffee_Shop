@@ -6,7 +6,9 @@ export default function Footer() {
     <Container>
         <Wrapper>
         <First>
-            <img src={logo} height="100px" width="100px" />
+            <Log><img src={logo} height="100px" width="100px" />
+                <text>My Koffee Shop</text>
+            </Log>
             <p>Independent family coffee shop in the heart of Aldgate East, specializing in its love for good coffee and an amazing variety of dishes by sourcing the best and authentic ingredients.</p>
         </First>
         <Second>
@@ -45,8 +47,15 @@ const Wrapper=styled.div`
     padding:2rem 2rem;
     display:flex;
 `
+
 const First=styled.div`
 width:25%;
+`
+const Log=styled.div`
+ display:flex;
+ text{
+    padding: 2.7rem 0;
+ }
 `
 const Second=styled.div`
 width:25%;
