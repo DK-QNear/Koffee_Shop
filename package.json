@@ -1,5 +1,6 @@
 {
   "name": "my-koffee-shop",
+  "homepage": "https://DK-QNear.github.io/Koffee_Shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "firebase": "^9.19.1",
+    "gh-pages": "^5.0.0",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
@@ -27,6 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": " react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

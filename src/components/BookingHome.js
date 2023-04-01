@@ -31,9 +31,7 @@ export default function BookingHome() {
             alert('Please fill all the fields');
         }else{
             writeUserData();
-            // const uid=uuid();
         function writeUserData() {
-            // const db = getDatabase();
             set(ref(database, 'data/'), {
             bookingdate: book_date.value,
             bookingtime: book_time.value,
