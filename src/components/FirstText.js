@@ -22,5 +22,6 @@ const Para=styled.div`
     text-align:center;
     p{
         text-align:center;
+        font-family: "Bradley Hand", cursive;
     }
 `

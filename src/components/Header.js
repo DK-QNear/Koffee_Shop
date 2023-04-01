@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import {Outlet, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../files/logo.png'
 import { RxHamburgerMenu } from 'react-icons/rx'
@@ -14,8 +14,13 @@ function Header() {
         <p>WELCOME TO MyKOFFEE Shop</p>
       </Menu>
       <RightMenu>
-        {/* <Link to="menu">Menu</Link>
-        <Link to="about">About</Link> */}
+        <Link to="/"className='MapMenu'>Home</Link>
+       
+        <Link to="/menu" className='MapMenu'>Menu</Link>
+        
+        <Link to="/book" className='MapMenu'>Book</Link>
+        
+        {/* <Outlet/> */}
       </RightMenu>
       <BurgerMenu className="BMenu" >
         {open ? <MdClose onClick={() => setOpen(!open)} /> : <RxHamburgerMenu onClick={() => setOpen(!open)} />}
@@ -23,8 +28,11 @@ function Header() {
       <Drop>
         {open ?
         <div>
-             {/* <Link to="menu">Menu</Link>
-             <Link to="about">About</Link> */}
+          <Link to="/" className='MapMinMenu'>Home</Link>
+       
+       <Link to="/menu" className='MapMinMenu'>Menu</Link>
+       
+       <Link to="/book" className='MapMinMenu'>Book</Link>
              </div>
              :""}
       </Drop>
@@ -36,6 +44,7 @@ export default Header
 
 const Container = styled.div`
   display:flex;
+  width:100vw;
   position:relative;
   z-index:2;
   align-item:center;
@@ -46,6 +55,9 @@ const Container = styled.div`
 }
 @media(max-width:768px){
  height:500px
+}
+@media(max-width:605px){
+  width:100vw;
 }
   img{
       height:90px;
@@ -58,6 +70,7 @@ const Logo = styled.img`
 
 const Menu = styled.div`
     p{ 
+      font-family: "Bradley Hand", cursive;
       color:white;
       padding:0.7rem;
     }
@@ -65,9 +78,17 @@ const Menu = styled.div`
 
 const RightMenu = styled.div`
     display: flex;
+    justify-content:space-between;
+    color:white;
     right:0;
+    padding: 2rem 2rem;
     @media(max-width: 768px){
       display:none;
+    }
+    // background-color:black;
+    Link{
+      padding: 2rem 2rem;
+      color:white;
     }
 `
 

@@ -29,7 +29,7 @@ export default function Brunch() {
                 <Back_Image style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', margin: '0', width: '80%',height:'80%' }} />
                 <Menu>
                     <MenuWrap>
-                        <h1>MyKoffee's BREAKFAST SPECIAL</h1>
+                        <h1>MyKoffee's BRUNCH & BREAKFAST SPECIAL</h1>
                         {BrunchData}
                     </MenuWrap>
                 </Menu>
@@ -78,7 +78,7 @@ width:50%;
 // height:70%;
 background-color:white;
 box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-h1{
+h1{ 
     font-family: rockwell;
     font-weight:lighter;
     text-align:center;
